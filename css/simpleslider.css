@@ -1,0 +1,97 @@
+.simple-slider-wrap {
+	position: relative;
+}
+
+.simple-slider-mask {
+	position:relative;
+	overflow: hidden;
+}
+
+/* Reset list styles */
+.simple-slider,
+.simple-slider li,
+.simple-slider-nav,
+.simple-slider-nav li {
+	margin: 0;
+	padding: 0;
+	letter-spacing: normal;
+}
+
+/* Main slider basics */
+.simple-slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	letter-spacing: normal;
+}
+
+.simple-slider li {
+	position: relative;
+	display: block;
+	letter-spacing: normal;
+}
+
+.simple-slider li a {
+	display: block;
+}
+
+.simple-slider img {
+	display: block;
+	cursor: pointer;
+}
+
+.simple-slider-nav { text-align: center; }
+
+.simple-slider-nav li {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.simple-slider-nav a {
+	text-decoration: none;
+	border: none;
+}
+
+.simple-slider-nav a span {
+	
+}
+
+.simple-slider-nav .simple-slider-prev { }
+.simple-slider-nav .simple-slider-next { }
+
+.simple-slider-nav .simple-slider-prev a span { color: #999; }
+.simple-slider-nav .simple-slider-next a span { color: #999; }
+
+.simple-slider-nav .simple-slider-prev a:hover span { color: #666; }
+.simple-slider-nav .simple-slider-next a:hover span { color: #666; }
+
+.simple-slider-nav .simple-slider-prev a:active span { color: #333; }
+.simple-slider-nav .simple-slider-next a:active span { color: #333; }
+
+.simple-slider-nav .simple-slider-prev a.simple-slider-disabled span { color: #ddd; }
+.simple-slider-nav .simple-slider-next a.simple-slider-disabled span { color: #ddd; }
+
+.simple-slider-nav .simple-slider-prev a.simple-slider-disabled { cursor: default; }
+.simple-slider-nav .simple-slider-next a.simple-slider-disabled { cursor: default; }
+
+
+/* Horizontal */
+.simple-slider-horizontal .simple-slider-mask { height: 190px; }
+
+.simple-slider-horizontal .simple-slider {
+	width: auto;
+	float: left;
+}
+
+.simple-slider-horizontal .simple-slider li {
+	float: left;
+	display: inline;
+	margin: 0 10px 0 0;
+}
+
+/* Vertical */
+.simple-slider-vertical .simple-slider-mask { width: 190px; }
+
+.simple-slider-vertical .simple-slider li {
+	margin: 0 0 10px 0;
+}
